@@ -18,10 +18,61 @@ import { nanoid } from 'nanoid'
 import Lessons from './Lessons'
 export default function Course() {
   const lessons = [
-    { id: nanoid(), time: 60, open: false },
-    { id: nanoid(), time: 58, open: false },
-    { id: nanoid(), time: 59, open: true },
-    { id: nanoid(), time: 56, open: true },
+    {
+      id: nanoid(),
+      time: 60,
+      open: false,
+      about: 'lorem ipsum dolor sit amet, consectetur adipiscing elit lorerm',
+    },
+    {
+      id: nanoid(),
+      time: 58,
+      open: false,
+      about: 'Ipsum ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+      id: nanoid(),
+      time: 59,
+      open: false,
+      about: 'Dolor ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+      id: nanoid(),
+      time: 56,
+      open: false,
+      about: 'sit ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+      id: nanoid(),
+      time: 56,
+      open: false,
+      about: 'sit ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+      id: nanoid(),
+      time: 56,
+      open: false,
+      about: 'sit ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+      id: nanoid(),
+      time: 56,
+      open: false,
+      about: 'sit ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+
+    {
+      id: nanoid(),
+      time: 56,
+      open: true,
+      about: 'sit ipsum dolor sit amet, consectetur adipiscing elit',
+    },
+    {
+      id: nanoid(),
+      time: 56,
+      open: true,
+      about: 'sit ipsum dolor sit amet, consectetur adipiscing elit',
+    },
   ]
 
   return (
@@ -117,7 +168,9 @@ export default function Course() {
           </div>
         </section>
       </div>
-      <Lessons lessons={lessons} />
+      <div className="flex items-center px-5 py-4 gap-12 container mx-auto bg-white">
+        <Lessons lessons={lessons} />
+      </div>
     </CourseWrapper>
   )
 }

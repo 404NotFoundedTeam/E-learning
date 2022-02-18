@@ -1,6 +1,5 @@
-import { IconButton } from '@mui/material'
 import React from 'react'
-import { FaLock, FaPlay } from 'react-icons/fa'
+import Accardion from './Accardion'
 
 export default function Lessons({ lessons }) {
   const arr = lessons.sort((a, b) => {
@@ -17,17 +16,13 @@ export default function Lessons({ lessons }) {
             </h2>
             <ul>
               {arr.map((item, i) => (
-                <li
-                  className="px-3 py-4 flex items-center justify-between"
-                  key={item.id}
-                >
-                  <div className="flex items-center gap-1">
-                    <IconButton>
-                      {item.open ? <FaPlay /> : <FaLock />}
-                    </IconButton>
-                    <p>Lesson {i + 1}</p>
-                  </div>
-                  <div></div>
+                <li className="rounded-none" key={item.id}>
+                  <Accardion
+                    num={i + 1}
+                    time={item.time}
+                    open={item.open}
+                    about={item.about}
+                  />
                 </li>
               ))}
             </ul>
