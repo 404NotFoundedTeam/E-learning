@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack';
 
 export default function Header() {
   return (
-    <header className='home--header flex items-center py-4 gap-12 container mx-auto bg-white'>
+    <header className='home--header flex items-center py-4 gap-12 container mx-auto'>
       <Link to="/" className='text-2xl font-bold min-w-fit'>E-learning</Link>
       <nav className='text-sm flex justify-between w-full'>
         <ul className='flex items-center gap-10'>
