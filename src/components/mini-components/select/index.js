@@ -4,7 +4,6 @@ import OutlinedInput from "@mui/material/OutlinedInput";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import Checkboxes from "../checkbox/checkbox";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -43,29 +42,33 @@ export default function MultipleSelectPlaceholder({ names, placeholder }) {
   return (
     <div>
       <FormControl
-        sx={{
-          m: 1,
-          width: 300,
-          mt: 3,
-          border: "none",
-          outline: "none",
-          backgroundColor: "rgba(145, 158, 171, 0.08)",
-          "&:hover": {
-            backgroundColor: "rgba(145, 158, 171, 0.18)",
-          },
-        }}
+        sx={{ m: 1, width: 300, mt: 3, marginLeft: 0, border: "none" }}
       >
         <Select
-          sx={{ border: "none", outline: "none" }}
           multiple
           displayEmpty
           value={personName}
-          placeholder={placeholder}
+          sx={{
+            outline: "none",
+            border: "none",
+            borderRadius: "8px",
+            "&:focus": {
+              border: "none",
+            },
+            backgroundColor: "rgba(145, 158, 171, 0.08)",
+            "&:hover": {
+              backgroundColor: "rgba(145, 158, 171, 0.18)",
+            },
+          }}
           onChange={handleChange}
           input={<OutlinedInput />}
           renderValue={(selected) => {
             if (selected.length === 0) {
-              return <p>{placeholder}</p>;
+              return (
+                <span className="text-sm text-slate-500 font-medium">
+                  {placeholder}
+                </span>
+              );
             }
 
             return selected.join(", ");
@@ -73,20 +76,20 @@ export default function MultipleSelectPlaceholder({ names, placeholder }) {
           MenuProps={MenuProps}
           inputProps={{ "aria-label": "Without label" }}
         >
-          <MenuItem disabled value=""></MenuItem>
-          {names.map((name, i) => (
-            <div className="flex ">
-              <Checkboxes id={`duration${i}`} />
-              <label for={`duration${i}`}>
-                <MenuItem
-                  key={name}
-                  value={name}
-                  style={getStyles(name, personName, theme)}
-                >
-                  {name}
-                </MenuItem>
-              </label>
-            </div>
+          {names.map((name) => (
+            <MenuItem
+              key={name}
+              value={name}
+              sx={{
+                backgroundColor: "rgba(145, 158, 171, 0.08)",
+                "&:select": {
+                  backgroundColor: "rgba(145, 158, 171, 0.18)",
+                },
+              }}
+              style={getStyles(name, personName, theme)}
+            >
+              {name}
+            </MenuItem>
           ))}
         </Select>
       </FormControl>

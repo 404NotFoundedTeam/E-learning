@@ -29,5 +29,30 @@ button {
 
 
 .big-card {
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 18px 40px 0px;
+}
+
+svg {
+  border: none !important;
+  outline: none !important;
+}
+
+.Mui-selected {
+  background-color: #FFDAC1 !important;
+  color: orangered !important;
+  font-weight: 500;
+}
+
+.Mui-selected:hover {
+  background-color: #EEB691 !important;
+
+}
+
+
+.MuiPagination-ul {
+  text-align: center;
+}
+
+.h-90{
+  height:350px
 }

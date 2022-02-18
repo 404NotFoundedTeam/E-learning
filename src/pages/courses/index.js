@@ -5,6 +5,7 @@ import SearchMui from "../../components/mini-components/search/search";
 import TextFieldMui from "../../components/mini-components/textfield/textfield";
 import MultipleSelectPlaceholder from "../../components/mini-components/select";
 import BigCard from "../../components/BigCard/BigCard";
+import BasicPagination from "../../components/mini-components/pagination/paginations";
 
 const durations = [
   "0 - 1 Hour",
@@ -23,17 +24,41 @@ const category = [
   "Healthcare",
 ];
 
-const obj = {
-  img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
-  name: "Design Masterclass Course",
-  type: "design",
-  price: 100,
-  reviews: 3600,
-  students: 180,
-  level: "beginner",
-  description:
-    "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
-};
+const datas = [
+  {
+    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+];
 
 const level = ["beginner", "elementary", "intermediate"];
 
@@ -41,13 +66,13 @@ const fee = ["free", "paid"];
 const language = ["russian", "english", "french"];
 
 function Courses() {
-  console.log("====================================");
-  console.log("courses");
-  console.log("====================================");
   return (
     <SimpleContainer>
       <div>
-        <h2 className="text-5xl font-bold py-12" sx={{ color: "#212B36" }}>
+        <h2
+          className="text-5xl font-bold py-12 pb-16"
+          sx={{ color: "#212B36" }}
+        >
           Courses
         </h2>
       </div>
@@ -77,10 +102,10 @@ function Courses() {
               </div>
 
               <div id="duation">
-                <p className="text-slate-500 font-weight-500 py-4">Duration</p>
+                <p className="text-slate-500 font-weight-500 pt-4 ">Duration</p>
                 <div>
                   <MultipleSelectPlaceholder
-                    sx={{ backgroundColor: "silver" }}
+                    sx={{ backgroundColor: "silver", paddingTop: 0 }}
                     names={durations}
                     placeholder="All durations"
                   />
@@ -88,7 +113,7 @@ function Courses() {
               </div>
 
               <div id="category">
-                <p className="text-slate-500 font-weight-500 py-4">Category</p>
+                <p className="text-slate-500 font-weight-500 pt-4">Category</p>
                 <div>
                   <MultipleSelectPlaceholder
                     sx={{ backgroundColor: "silver" }}
@@ -99,7 +124,7 @@ function Courses() {
               </div>
 
               <div id="Level">
-                <p className="text-slate-500 font-weight-500 py-4">Category</p>
+                <p className="text-slate-500 font-weight-500 pt-4">Category</p>
                 <div>
                   <MultipleSelectPlaceholder
                     sx={{ backgroundColor: "silver" }}
@@ -110,7 +135,7 @@ function Courses() {
               </div>
 
               <div id="fee">
-                <p className="text-slate-500 font-weight-500 py-4">Category</p>
+                <p className="text-slate-500 font-weight-500 pt-4">Category</p>
                 <div>
                   <MultipleSelectPlaceholder
                     sx={{ backgroundColor: "silver" }}
@@ -135,7 +160,14 @@ function Courses() {
           </div>
         </div>
         <div className="w-8/12">
-          <BigCard obj={obj} />
+          {datas.map((obj, i) => (
+            <BigCard obj={obj} key={i} />
+          ))}
+          <div className="w-full text-center pt-10 ">
+            <div className="mx-auto w-1/2">
+              <BasicPagination />
+            </div>
+          </div>
         </div>
       </div>
     </SimpleContainer>
