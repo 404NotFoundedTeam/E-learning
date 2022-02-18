@@ -3,5 +3,8 @@ module.exports = {
   theme: {
     extend: {},
   },
+  colors: {
+    courseMainColor: "#212B36;",
+  },
   plugins: [],
 };
