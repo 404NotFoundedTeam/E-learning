@@ -17,11 +17,11 @@
   transition: 0.3s;
 }
 
+.home--header nav a:hover {
+  color: rgb(175, 175, 175);
+}
+
 button {
   text-transform: capitalize !important;
   font-family: "Poppins", sans-serif !important;
-}
-
-.home--header nav a:hover {
-  color: rgb(175, 175, 175);
 }
