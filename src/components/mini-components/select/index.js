@@ -17,19 +17,6 @@ const MenuProps = {
   },
 };
 
-const names = [
-  "Oliver Hansen",
-  "Van Henry",
-  "April Tucker",
-  "Ralph Hubbard",
-  "Omar Alexander",
-  "Carlos Abbott",
-  "Miriam Wagner",
-  "Bradley Wilkerson",
-  "Virginia Andrews",
-  "Kelly Snyder",
-];
-
 function getStyles(name, personName, theme) {
   return {
     fontWeight:
@@ -39,7 +26,7 @@ function getStyles(name, personName, theme) {
   };
 }
 
-export default function MultipleSelectPlaceholder() {
+export default function MultipleSelectPlaceholder({ names, placeholder }) {
   const theme = useTheme();
   const [personName, setPersonName] = React.useState([]);
 
@@ -56,19 +43,29 @@ export default function MultipleSelectPlaceholder() {
   return (
     <div>
       <FormControl
-        sx={{ m: 1, width: 300, mt: 3, border: "none", outline: "none" }}
+        sx={{
+          m: 1,
+          width: 300,
+          mt: 3,
+          border: "none",
+          outline: "none",
+          backgroundColor: "rgba(145, 158, 171, 0.08)",
+          "&:hover": {
+            backgroundColor: "rgba(145, 158, 171, 0.18)",
+          },
+        }}
       >
         <Select
           sx={{ border: "none", outline: "none" }}
           multiple
           displayEmpty
           value={personName}
-          placeholder="All duration"
+          placeholder={placeholder}
           onChange={handleChange}
           input={<OutlinedInput />}
           renderValue={(selected) => {
             if (selected.length === 0) {
-              return <p>All duration</p>;
+              return <p>{placeholder}</p>;
             }
 
             return selected.join(", ");
