@@ -8,7 +8,6 @@ import {
   FaFile,
   FaGlobe,
   FaPlay,
-  FaQuestion,
   FaSignal,
   FaStar,
   FaUser,

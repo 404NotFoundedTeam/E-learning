@@ -27,6 +27,7 @@ export default function Lessons({ lessons }) {
                     </IconButton>
                     <p>Lesson {i + 1}</p>
                   </div>
+                  <div></div>
                 </li>
               ))}
             </ul>
