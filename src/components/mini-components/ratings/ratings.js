@@ -9,6 +9,7 @@ export default function RatingMui({ ...props }) {
       {...props}
       name="simple-controlled"
       value={value}
+      sx={{ fontSize: "24px" }}
       onChange={(event, newValue) => {
         setValue(newValue);
       }}

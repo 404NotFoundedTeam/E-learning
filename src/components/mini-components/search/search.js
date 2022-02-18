@@ -1,32 +1,33 @@
 import * as React from "react";
 import SearchIcon from "@mui/icons-material/Search";
-import { alpha, InputBase, styled } from "@mui/material";
+import { InputBase, styled } from "@mui/material";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
-  border: "1px solid",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
+  borderRadius: "8px",
+  marginLeft: "0 !important",
+  backgroundColor: "rgba(145, 158, 171, 0.08)",
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
+    backgroundColor: "rgba(145, 158, 171, 0.18)",
   },
+  color: "#637381",
   marginRight: theme.spacing(2),
-  marginLeft: 0,
   width: "100%",
   [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(3),
-    width: "auto",
+    // marginLeft: theme.spacing(3),
+    width: "100%",
   },
 }));
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 2),
-  height: "100%",
+  marginLeft: 0,
   position: "absolute",
   pointerEvents: "none",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  paddingTop: "5px",
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -37,15 +38,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
+    // [theme.breakpoints.up("md")]: {
+    //   width: "20ch",
+    // },
   },
 }));
 
-export default function SearchMui() {
+export default function SearchMui({ ...props }) {
   return (
-    <Search>
+    <Search {...props}>
       <SearchIconWrapper>
         <SearchIcon />
       </SearchIconWrapper>

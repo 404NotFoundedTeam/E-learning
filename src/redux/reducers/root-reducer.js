@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
 import globalReducer from "./global";
-import todosReducer from "./todos";
+import postsReducer from "./posts";
 
 const rootReducer = combineReducers({
   global: globalReducer,
-  todos: todosReducer,
+  posts: postsReducer,
 });
 
 export default rootReducer;
