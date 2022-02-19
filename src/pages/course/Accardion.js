@@ -15,6 +15,9 @@ export default function Accardion({ num, time, open, about }) {
       sx={{
         width: '100%',
         margin: '0',
+        backgroundColor: 'transparent',
+        borderBottom: '1px solid gray',
+        borderRadius: 'none !important',
       }}
     >
       <AccordionSummary
@@ -24,8 +27,8 @@ export default function Accardion({ num, time, open, about }) {
             <FaAngleRight />
           </Typography>
         }
-        // aria-controls="panel1a-content"
-        // id="panel1a-header"
+        aria-controls="panel1a-content"
+        id={num}
       >
         <Typography>
           <IconButton>{open ? <FaPlay /> : <FaLock />}</IconButton>

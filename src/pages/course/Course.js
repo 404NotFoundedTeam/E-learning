@@ -78,8 +78,8 @@ export default function Course() {
   return (
     <CourseWrapper>
       <Header />
-      <div className="flex items-center px-5 py-4 gap-12 container mx-auto bg-white">
-        <div className="flex items-center gap-1.5">
+      <div className="items-center py-4 gap-12 container mx-auto bg-white mt-10 text-gray-600">
+        <div className="flex items-center gap-2">
           <Link to="/">Home</Link>{' '}
           <span>
             <FaAngleRight />
@@ -92,7 +92,7 @@ export default function Course() {
         </div>
       </div>
 
-      <div className="flex items-center px-5 py-4 gap-12 container mx-auto  bg-white">
+      <div className="items-center py-4 gap-12 container mx-auto bg-white">
         <section className="container flex">
           <div className="w-6/12">
             <div>
@@ -100,7 +100,7 @@ export default function Course() {
                 Design Masterclass Course
               </h2>
               <h4 className="text-blue-600 text-xs mb-6">DESIGN</h4>
-              <p className="text-gray-500 mb-8">
+              <p className="text-gray-500 mb-8 text-lg leading-8 tracking-tight">
                 Occaecati est et illo quibusdam accusamus qui. Incidunt aut et
                 molestiae ut facere aut. Est quidem iusto praesentium excepturi
                 harum nihil tenetur facilis. Ut omnis voluptates nihil
@@ -168,7 +168,7 @@ export default function Course() {
           </div>
         </section>
       </div>
-      <div className="flex items-center px-5 py-4 gap-12 container mx-auto bg-white">
+      <div className="items-center py-4 gap-12 container mx-auto bg-white">
         <Lessons lessons={lessons} />
       </div>
     </CourseWrapper>

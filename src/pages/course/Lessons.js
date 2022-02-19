@@ -1,5 +1,6 @@
 import React from 'react'
 import Accardion from './Accardion'
+import CardMain from './CardMain'
 
 export default function Lessons({ lessons }) {
   const arr = lessons.sort((a, b) => {
@@ -8,7 +9,7 @@ export default function Lessons({ lessons }) {
 
   return (
     <section className="px-5 py-4 text-auto container">
-      <div className="d-flex">
+      <div className="flex gap-8">
         <div className="w-7/12">
           <div>
             <h2 className="bold font-bold text-3xl font-size-22 my-6">
@@ -28,7 +29,11 @@ export default function Lessons({ lessons }) {
             </ul>
           </div>
         </div>
-        <div className="w-5/12"></div>
+        <div className="w-5/12">
+          <div>
+            <CardMain />
+          </div>
+        </div>
       </div>
     </section>
   )
