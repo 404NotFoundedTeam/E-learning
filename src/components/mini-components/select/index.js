@@ -4,6 +4,8 @@ import OutlinedInput from "@mui/material/OutlinedInput";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import ChipsArray from "../ChipArray/index";
+import DeletableChips from "../Chip/chip";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -70,8 +72,10 @@ export default function MultipleSelectPlaceholder({ names, placeholder }) {
                 </span>
               );
             }
-
-            return selected.join(", ");
+            console.log(selected.join(", "));
+            // return <DeletableChips arr={[selected.join(", ")]} />;
+            return <ChipsArray arr={selected} />;
+            // return selected.join(", ");
           }}
           MenuProps={MenuProps}
           inputProps={{ "aria-label": "Without label" }}

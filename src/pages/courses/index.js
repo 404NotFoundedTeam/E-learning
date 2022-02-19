@@ -26,7 +26,18 @@ const category = [
 
 const datas = [
   {
-    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_2.jpg",
     name: "Design Masterclass Course",
     type: "design",
     price: 100,
@@ -38,6 +49,193 @@ const datas = [
   },
   {
     img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_2.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_2.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_2.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_2.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_2.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://avatars.mds.yandex.net/i?id=5fd1c30b137241daebd0586af92cde0f-5234655-images-thumbs&n=13",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg",
+    name: "Design Masterclass Course",
+    type: "design",
+    price: 100,
+    reviews: 3460,
+    students: 180000,
+    level: "Beginner",
+    description:
+      "Occaecati est et illo quibusdam accusamus qui Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur",
+  },
+  {
+    img: "https://zone-assets-api.vercel.app/assets/images/e-learning/course_2.jpg",
     name: "Design Masterclass Course",
     type: "design",
     price: 100,
@@ -87,15 +285,15 @@ function Courses() {
                 <p className="text-slate-500 font-weight-500 py-4">Ratings</p>
                 <div>
                   <div className="flex items-center gap-1">
-                    <RatingMui className="py-2" sx={{ marginLeft: 0 }} />{" "}
+                    <RatingMui className="py-2" sx={{ marginLeft: 0 }} />
                     {"&up"}
                   </div>
                   <div className="flex items-center gap-1">
-                    <RatingMui className="py-2" sx={{ marginLeft: 0 }} />{" "}
+                    <RatingMui className="py-2" sx={{ marginLeft: 0 }} />
                     {"&up"}
                   </div>
                   <div className="flex items-center gap-1">
-                    <RatingMui className="py-2" sx={{ marginLeft: 0 }} />{" "}
+                    <RatingMui className="py-2" sx={{ marginLeft: 0 }} />
                     {"&up"}
                   </div>
                 </div>
@@ -113,23 +311,14 @@ function Courses() {
               </div>
 
               <div id="category">
-                <p className="text-slate-500 font-weight-500 pt-4">Category</p>
+                <p className="text-slate-500 font-weight-500 pt-4 pb-0">
+                  Category
+                </p>
                 <div>
                   <MultipleSelectPlaceholder
                     sx={{ backgroundColor: "silver" }}
                     names={category}
                     placeholder="Category"
-                  />
-                </div>
-              </div>
-
-              <div id="Level">
-                <p className="text-slate-500 font-weight-500 pt-4">Category</p>
-                <div>
-                  <MultipleSelectPlaceholder
-                    sx={{ backgroundColor: "silver" }}
-                    names={level}
-                    placeholder="Level"
                   />
                 </div>
               </div>

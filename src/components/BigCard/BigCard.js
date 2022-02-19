@@ -32,7 +32,7 @@ export default function BigCard({ obj }) {
             <span>
               <span className="font-bold text-slate-700">
                 {" "}
-                {numeral(obj.reviews).format("0.0a")}{" "}
+                {numeral(obj.reviews).format("0.0a").slice(0, -1)}
               </span>
               <span className="text-slate-300 underline">
                 ( {numeral(obj.reviews).format("0.00a")} reviews )
