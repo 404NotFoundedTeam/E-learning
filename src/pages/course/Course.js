@@ -16,7 +16,7 @@ import { Fab } from '@mui/material'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import { nanoid } from 'nanoid'
 import Lessons from './Lessons'
-export default function Course() {
+export default function Course({ obj }) {
   const lessons = [
     {
       id: nanoid(),
@@ -74,6 +74,8 @@ export default function Course() {
       about: 'sit ipsum dolor sit amet, consectetur adipiscing elit',
     },
   ]
+
+  console.log(obj)
 
   return (
     <CourseWrapper>
