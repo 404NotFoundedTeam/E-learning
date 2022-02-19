@@ -1,8 +1,7 @@
 import { dispatch } from "../store";
-import * as t from "@types";
+import * as t from "../types";
 
 export const addList = (value) => {
-  console.log(value);
   dispatch({ type: t.ADD_LIST, payload: { value } });
 };
 

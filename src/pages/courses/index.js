@@ -265,7 +265,7 @@ const language = ["russian", "english", "french"];
 
 function Courses() {
   return (
-    <SimpleContainer>
+    <div className="container mx-auto">
       <div>
         <h2
           className="text-5xl font-bold py-12 pb-16"
@@ -359,7 +359,7 @@ function Courses() {
           </div>
         </div>
       </div>
-    </SimpleContainer>
+    </div>
   );
 }
 
