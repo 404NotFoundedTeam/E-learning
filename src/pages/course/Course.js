@@ -12,7 +12,7 @@ import {
   FaStar,
   FaUser,
 } from 'react-icons/fa'
-import { IconButton } from '@mui/material'
+import { Fab } from '@mui/material'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import { nanoid } from 'nanoid'
 import Lessons from './Lessons'
@@ -77,7 +77,6 @@ export default function Course() {
 
   return (
     <CourseWrapper>
-      <Header />
       <div className="items-center py-4 gap-12 container mx-auto bg-white mt-10 text-gray-600">
         <div className="flex items-center gap-2">
           <Link to="/">Home</Link>{' '}
@@ -154,15 +153,23 @@ export default function Course() {
               className="flex items-center justify-center h-full w-7/12 mx-auto bg-[url('https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg')] 
              object-cover rounded-xl  "
             >
-              <div className="p-1 rounded-full bg-white">
-                <IconButton
+              <div>
+                {/* <IconButton
                   className=" "
                   size="large"
                   aria-label="fingerprint"
                   color="secondary"
                 >
                   <FaPlay />
-                </IconButton>
+                </IconButton> */}
+                <Fab
+                  color="inherit"
+                  className="hover:scale-105"
+                  aria-label="add"
+                  size=""
+                >
+                  <FaPlay className="text-xl" />
+                </Fab>
               </div>
             </div>
           </div>

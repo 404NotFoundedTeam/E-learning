@@ -1,15 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  color: #212b36;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
 .header-cover {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(7.7px);
-  -webkit-backdrop-filter: blur(7.7px);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .home--header nav a {
@@ -24,4 +48,31 @@
 button {
   text-transform: capitalize !important;
   font-family: "Poppins", sans-serif !important;
+}
+
+.big-card {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 18px 40px 0px;
+}
+
+svg {
+  border: none !important;
+  outline: none !important;
+}
+
+.Mui-selected {
+  background-color: #ffdac1 !important;
+  color: orangered !important;
+  font-weight: 500;
+}
+
+.Mui-selected:hover {
+  background-color: #eeb691 !important;
+}
+
+.MuiPagination-ul {
+  text-align: center;
+}
+
+.h-90 {
+  height: 350px;
 }

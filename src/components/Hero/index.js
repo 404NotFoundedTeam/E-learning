@@ -7,12 +7,12 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 export default function Hero() {
   return (
-    <div className='flex flex-wrap items-start mt-20'>
+    <div className='flex flex-wrap items-start mt-16'>
       <div className='w-full lg:w-6/12'>
         <h1 className='text-6xl font-bold capitalize md:pr-36 leading-[80px]'>
           Free <span className='text-[#919EAB]'>online</span> <span className='underline text-[#FA541C]'>courses</span> from the experts.
         </h1>
-        <p className='text-gray-700 my-9 md:pr-28'>Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet e.</p>
+        <p className='text-[#919EAB] my-9 md:pr-28'>Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet sapien, quis venenatis ante odio sit amet e.</p>
         <div>
           <MainButton variant='contained' className="!py-3 !px-4">Ready start <ArrowForwardIosIcon className='ml-3 !text-base' /></MainButton>
           <Link to='/' className='ml-5 text-gray-700 hover:text-black'>
@@ -21,6 +21,20 @@ export default function Hero() {
             </Fab>
             <span className='ml-3'>Watch here</span>
           </Link>
+        </div>
+        <div className='flex mt-12 border-t border-dotted border-gray-300 pt-10'>
+          <div className='w-4/12'>
+            <p className='text-3xl font-bold'>14k+</p>
+            <p className='text-[#919EAB]'>Learners</p>
+          </div>
+          <div className='w-4/12'>
+            <p className='text-3xl font-bold'>1.05k+</p>
+            <p className='text-[#919EAB]'>Courses</p>
+          </div>
+          <div className='w-4/12'>
+            <p className='text-3xl font-bold'>59k+</p>
+            <p className='text-[#919EAB]'>Graduates</p>
+          </div>
         </div>
       </div>
       <div className='w-full lg:w-6/12'>
