@@ -1,8 +1,8 @@
-import GradeIcon from "@mui/icons-material/Grade";
-import { Avatar } from "@mui/material";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import numeral from "numeral";
+import GradeIcon from '@mui/icons-material/Grade'
+import { Avatar } from '@mui/material'
+import AccessTimeIcon from '@mui/icons-material/AccessTime'
+import BarChartIcon from '@mui/icons-material/BarChart'
+import numeral from 'numeral'
 
 export default function BigCard({ obj }) {
   return (
@@ -28,26 +28,26 @@ export default function BigCard({ obj }) {
         </div>
         <div className="flex flex-col gap-2 w-full">
           <div>
-            <GradeIcon sx={{ color: "#FDD627" }} />{" "}
+            <GradeIcon sx={{ color: '#FDD627' }} />{' '}
             <span>
               <span className="font-bold text-slate-700">
-                {" "}
-                {numeral(obj.reviews).format("0.0a")}{" "}
+                {' '}
+                {numeral(obj.reviews).format('0.0a')}{' '}
               </span>
               <span className="text-slate-300 underline">
-                ( {numeral(obj.reviews).format("0.00a")} reviews )
+                ( {numeral(obj.reviews).format('0.00a')} reviews )
               </span>
             </span>
             <span className="mx-3 text-slate-400"> | </span>
             <span>
               <span className=" font-bold text-slate-700  mr-1">
-                {numeral(obj.students).format("0a")}
+                {numeral(obj.students).format('0a')}
               </span>
               students
             </span>
           </div>
           <div className="flex items-center py-4">
-            <Avatar /> <h3 className="ml-3 mr-1">Jayvion Simon </h3>{" "}
+            <Avatar /> <h3 className="ml-3 mr-1">Jayvion Simon </h3>{' '}
             <a href="#" className="text-slate-400  ">
               +5 teachers
             </a>
@@ -63,5 +63,5 @@ export default function BigCard({ obj }) {
         </div>
       </div>
     </div>
-  );
+  )
 }
