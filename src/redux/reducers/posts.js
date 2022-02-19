@@ -67,7 +67,14 @@ const initialState = {
     },
 
 
-  ]
+  ],
+  categories:[
+      "Marketing",
+      "Community",
+      "Tutorials",
+      "Business",
+      "Management"
+  ] 
 };
 
 const postsReducer = (state = initialState, action) => {
