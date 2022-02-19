@@ -8,7 +8,7 @@
 
 .header-cover {
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(7.7px);
   -webkit-backdrop-filter: blur(7.7px);
 }
@@ -27,7 +27,6 @@ button {
   font-family: "Poppins", sans-serif !important;
 }
 
-
 .big-card {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 18px 40px 0px;
 }
@@ -38,21 +37,19 @@ svg {
 }
 
 .Mui-selected {
-  background-color: #FFDAC1 !important;
+  background-color: #ffdac1 !important;
   color: orangered !important;
   font-weight: 500;
 }
 
 .Mui-selected:hover {
-  background-color: #EEB691 !important;
-
+  background-color: #eeb691 !important;
 }
-
 
 .MuiPagination-ul {
   text-align: center;
 }
 
-.h-90{
-  height:350px
+.h-90 {
+  height: 350px;
 }
