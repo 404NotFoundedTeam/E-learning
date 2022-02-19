@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Courses from "./pages/courses";
-import HomePage from "./pages/HomePage";
+import HomePage from "./pages/Home";
 
 function App() {
   return (
     <>
-      <div className='header-cover sticky top-0 left-0 w-full shadow-sm'>
+      <div className='header-cover sticky top-0 left-0 w-full shadow-sm z-10'>
         <Header />
       </div>
       <Routes>

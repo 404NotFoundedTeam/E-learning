@@ -7,7 +7,7 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 export default function Hero() {
   return (
-    <div className='flex flex-wrap items-start mt-20'>
+    <div className='flex flex-wrap items-start mt-16'>
       <div className='w-full lg:w-6/12'>
         <h1 className='text-6xl font-bold capitalize md:pr-36 leading-[80px]'>
           Free <span className='text-[#919EAB]'>online</span> <span className='underline text-[#FA541C]'>courses</span> from the experts.
