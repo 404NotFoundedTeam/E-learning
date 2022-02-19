@@ -3,8 +3,10 @@ import { Avatar } from '@mui/material'
 import AccessTimeIcon from '@mui/icons-material/AccessTime'
 import BarChartIcon from '@mui/icons-material/BarChart'
 import numeral from 'numeral'
+import { Link } from 'react-router-dom'
+import Course from '../../pages/course/Course'
 
-export default function BigCard({ obj }) {
+export default function BigCard({ obj, data }) {
   return (
     <div className="big-card flex w-full rounded-t-md rounded-l-3xl overflow-hidden h-90 mb-8">
       <div className="left w-4/12 h-full">
@@ -23,7 +25,9 @@ export default function BigCard({ obj }) {
             </h3>
             <p className="text-slate-700 font-bold text-2xl">${obj.price}</p>
           </div>
-          <h3 className="text-slate-800 pb-2 font-bold text-md">{obj.name}</h3>
+          <h3 className="text-slate-800 pb-2 font-bold text-md">
+            <Link to="/course">{obj.name}</Link>
+          </h3>
           <p className="text-sm  text-slate-400">{obj.description}</p>
         </div>
         <div className="flex flex-col gap-2 w-full">

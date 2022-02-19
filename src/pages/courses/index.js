@@ -164,7 +164,7 @@ function Courses() {
         </div>
         <div className="w-8/12">
           {datas.map((obj, i) => (
-            <BigCard obj={obj} key={i} />
+            <BigCard obj={obj} data={datas} key={i} />
           ))}
           <div className="w-full text-center pt-10 ">
             <div className="mx-auto w-1/2">
