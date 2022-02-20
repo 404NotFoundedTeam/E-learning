@@ -29,7 +29,7 @@ export default function Post({ data }) {
             </p>
           </div>
         </div>
-        <div className="w-full py-4">
+        <div className="w-full p-4">
           <div className="mx-auto w-full md:w-8/12">
             <Owner data={data.owner} />
           </div>

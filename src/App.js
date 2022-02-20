@@ -8,7 +8,7 @@ import Course from './pages/course/Course'
 function App() {
   return (
     <>
-      <div className="header-cover sticky top-0 left-0 w-full shadow-sm z-10">
+      <div className="header-cover sticky top-0 z-50 left-0 w-full shadow-sm">
         <Header />
       </div>
       <Routes>

@@ -74,6 +74,17 @@ const initialState = {
       "Tutorials",
       "Business",
       "Management"
+  ],
+  popularTags: [
+    "Marketing",
+    "Development",
+    "Tutorials",
+    "Business",
+    "Management",
+    "Banking",
+    "Design",
+    "Comunity", 
+    "Tutorial", 
   ] 
 };
 
