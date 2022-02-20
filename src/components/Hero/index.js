@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
       </div>
       <div className='w-full lg:w-6/12'>
-        <img className='w-10/12 mx-auto' src="img/student.png" alt="" />
+        <img className='w-10/12 mx-auto mt-[-25px]' src="img/student.png" alt="" />
       </div>
     </div>
   )
