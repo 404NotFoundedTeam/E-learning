@@ -10,7 +10,7 @@ export default function Lessons({ lessons }) {
   return (
     <section className="px-5 py-4 text-auto container">
       <div className="flex gap-8">
-        <div className="w-7/12">
+        <div className="w-8/12">
           <div>
             <h2 className="bold font-bold text-3xl font-size-22 my-6">
               Lessons
@@ -29,7 +29,7 @@ export default function Lessons({ lessons }) {
             </ul>
           </div>
         </div>
-        <div className="w-5/12">
+        <div className="w-4/12">
           <div>
             <CardMain />
           </div>

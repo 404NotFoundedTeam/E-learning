@@ -156,14 +156,6 @@ export default function Course({ obj }) {
              object-cover rounded-xl  "
             >
               <div>
-                {/* <IconButton
-                  className=" "
-                  size="large"
-                  aria-label="fingerprint"
-                  color="secondary"
-                >
-                  <FaPlay />
-                </IconButton> */}
                 <Fab
                   color="inherit"
                   className="hover:scale-105"
