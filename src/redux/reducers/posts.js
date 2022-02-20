@@ -67,7 +67,25 @@ const initialState = {
     },
 
 
-  ]
+  ],
+  categories:[
+      "Marketing",
+      "Community",
+      "Tutorials",
+      "Business",
+      "Management"
+  ],
+  popularTags: [
+    "Marketing",
+    "Development",
+    "Tutorials",
+    "Business",
+    "Management",
+    "Banking",
+    "Design",
+    "Comunity", 
+    "Tutorial", 
+  ] 
 };
 
 const postsReducer = (state = initialState, action) => {
