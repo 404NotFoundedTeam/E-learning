@@ -7,6 +7,7 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import MainButton from '../../components/Button'
 import { FaPen } from 'react-icons/fa'
+import DialogCourse from './DialodCourse'
 
 const bull = (
   <Box
@@ -39,20 +40,9 @@ const card = (
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        hover: {
-          backgroundColor: 'rgb(250, 84, 18)',
-        },
       }}
     >
-      <MainButton
-        startIcon={<FaPen />}
-        children="Whrite A Review"
-        sx={{
-          width: '100%',
-          height: '50px',
-          color: 'rgb(250, 84, 28)',
-        }}
-      />
+      <DialogCourse />
     </CardActions>
   </React.Fragment>
 )
