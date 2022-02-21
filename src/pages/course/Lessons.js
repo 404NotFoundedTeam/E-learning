@@ -1,6 +1,7 @@
 import React from 'react'
 import Accardion from './Accardion'
 import CardMain from './CardMain'
+import YouLearn from './YouLearn'
 
 export default function Lessons({ lessons }) {
   const arr = lessons.sort((a, b) => {
@@ -28,6 +29,7 @@ export default function Lessons({ lessons }) {
               ))}
             </ul>
           </div>
+          <YouLearn />
         </div>
         <div className="w-4/12">
           <div>
