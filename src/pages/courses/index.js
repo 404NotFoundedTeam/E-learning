@@ -22,7 +22,7 @@ function Courses() {
 
   return (
     <SimpleContainer>
-      <div className="container mx-auto">
+      <div className="container mx-auto flex-wrap">
         <div>
           <h2
             className="text-5xl font-bold py-12 pb-16"
@@ -31,8 +31,8 @@ function Courses() {
             Courses
           </h2>
         </div>
-        <div className="flex justify-between w-full gap-10">
-          <div className="w-3/12">
+        <div className="flex justify-between w-full gap-10 md:gap-0 flex-wrap">
+          <div className="w-3/12 md:w-6/12 md:mx-auto sm:w-full xs:w-full">
             <div className="flex">
               <div>
                 <div className="pl-0 ">
@@ -111,7 +111,7 @@ function Courses() {
               <div></div>
             </div>
           </div>
-          <div className="w-8/12">
+          <div className="w-8/12 md:w-full sm:w-full xs:w-full">
             {datas.map((obj, i) => (
               <BigCard obj={obj} key={i} />
             ))}

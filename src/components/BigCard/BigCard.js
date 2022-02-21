@@ -5,7 +5,7 @@ import BarChartIcon from "@mui/icons-material/BarChart";
 import numeral from "numeral";
 import { NavLink } from "react-router-dom";
 
-export default function BigCard({ obj }) {
+export default function BigCard({ obj, data }) {
   return (
     <div className="big-card flex w-full rounded-2xl  overflow-hidden h-90 mb-8">
       <div className="left w-4/12 h-full">
@@ -38,7 +38,7 @@ export default function BigCard({ obj }) {
               ${obj.price}
             </p>
           </div>
-          <NavLink to={`${obj.name}`}>
+          <NavLink to={`courses/${obj.name}`}>
             <h3 className="text-slate-800 pb-2 font-bold text-md">
               {obj.name}
             </h3>
