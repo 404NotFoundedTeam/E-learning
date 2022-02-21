@@ -1,13 +1,9 @@
-import React from 'react';
-import Hero from '../../components/Hero';
-import Companies from '../../components/HomeCompanies';
+import React from "react";
+import Hero from "..";
 export default function HomePage() {
   return (
-    <div>
-      <div className="container mx-auto">
-        <Hero />
-        <Companies />
-      </div>
+    <div className="mx-auto">
+      <Hero />
     </div>
-  )
+  );
 }

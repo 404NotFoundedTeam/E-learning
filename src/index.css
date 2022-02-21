@@ -10,6 +10,12 @@ body {
   color: #212b36;
 }
 
+header,
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

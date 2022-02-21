@@ -45,7 +45,10 @@ export default function Posts() {
         </div>
         <div className="flex w-full flex-wrap mt-32">
           <div className="px-3 py-4 w-full">
-            <SearchMui className={"py-2 w-full lg:hidden"} placeholder="hello" />
+            <SearchMui
+              className={"py-2 w-full lg:hidden"}
+              placeholder="hello"
+            />
           </div>
           <div className="postsBlock flex flex-wrap w-full lg:w-8/12">
             {posts.map((item, i) => (
