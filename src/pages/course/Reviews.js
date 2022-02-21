@@ -16,7 +16,6 @@ export default function Reviews() {
         </div>
         <div className="w-4/12">
           <Score />
-          <Form />
         </div>
       </div>
     </div>
