@@ -15,6 +15,7 @@ export default function Instructors() {
           <CardInstr />
           <CardInstr />
           <CardInstr />
+          <CardInstr />
         </div>
       </div>
     </div>
