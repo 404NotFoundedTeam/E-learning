@@ -39,9 +39,6 @@ const card = (
       sx={{
         display: 'flex',
         justifyContent: 'center',
-        hover: {
-          backgroundColor: 'rgb(250, 84, 18)',
-        },
       }}
     >
       <MainButton
@@ -51,6 +48,9 @@ const card = (
           width: '100%',
           height: '50px',
           color: 'rgb(250, 84, 28)',
+          '&:hover': {
+            boxShadow: '300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+          },
         }}
       />
     </CardActions>

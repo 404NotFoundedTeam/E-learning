@@ -1,5 +1,6 @@
 import React from 'react'
 import Comments from './Comments'
+import Form from './Form'
 import CustomIcons from './Pagination'
 import Score from './Score'
 
@@ -15,6 +16,7 @@ export default function Reviews() {
         </div>
         <div className="w-4/12">
           <Score />
+          <Form />
         </div>
       </div>
     </div>
