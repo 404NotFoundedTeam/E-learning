@@ -4,6 +4,10 @@ import OutlinedInput from "@mui/material/OutlinedInput";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import ChipsArray from "../ChipArray/index";
+import DeletableChips from "../Chip/chip";
+import { Checkbox } from "@mui/material";
+import CustomizedCheckbox from "../checkbox/checkbox";
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -70,25 +74,44 @@ export default function MultipleSelectPlaceholder({ names, placeholder }) {
                 </span>
               );
             }
-
-            return selected.join(", ");
+            console.log(selected);
+            // return <DeletableChips arr={[selected.join(", ")]} />;
+            // return <ChipsArray arr={selected} />;
+            return (
+              <span className="text-slate-600 font-bold text-sm">
+                {selected.join(", ")}
+              </span>
+            );
           }}
           MenuProps={MenuProps}
           inputProps={{ "aria-label": "Without label" }}
         >
-          {names.map((name) => (
+          {names.map((name, i) => (
             <MenuItem
               key={name}
               value={name}
               sx={{
-                backgroundColor: "rgba(145, 158, 171, 0.08)",
-                "&:select": {
-                  backgroundColor: "rgba(145, 158, 171, 0.18)",
+                marginLeft: "10px",
+                marginBottom: "5px",
+                marginRight: "10px",
+                borderRadius: "5px",
+                backgroundColor: "rgba(145, 158, 171, 0.12) !important",
+                "&:selected": {
+                  backgroundColor: "rgba(145, 158, 171, 0.42) !important",
                 },
               }}
               style={getStyles(name, personName, theme)}
             >
-              {name}
+              <CustomizedCheckbox
+                id={`select${i}`}
+                sx={{ "&:selected": { color: "rgb(250, 84, 28)" } }}
+              />
+              {/* <input
+                type="checkbox"
+                style={{ selected: { color: "rgb(250, 84, 28)" } }}
+                className="mr-4"
+              /> */}
+              <label id={`select${i}`}> {name}</label>
             </MenuItem>
           ))}
         </Select>
