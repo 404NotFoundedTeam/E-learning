@@ -10,6 +10,7 @@ import { Button } from "@mui/material";
 import ShadowBox from "./ShadowBox";
 import BasicPagination from "../../components/mini-components/pagination/paginations";
 import MainButton from "../../components/Button";
+import { Register } from "../../components/HomeComponents";
 
 export default function Posts() {
   const posts = useSelector((state) => state.posts.posts);
@@ -132,12 +133,7 @@ export default function Posts() {
             </div>
           </div>
         </div>
-        <div className="lg:w-5-12 p-4 text-center mx-auto">
-          <img
-            className="w-full object-cover"
-            src="https://zone-assets-api.vercel.app/assets/illustrations/illustration_newsletter.svg"
-          />
-        </div>
+        <Register />
       </div>
     </PostsWrapper>
   );

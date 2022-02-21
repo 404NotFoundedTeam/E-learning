@@ -1,5 +1,6 @@
 import React from 'react'
 import Comments from './Comments'
+import Form from './Form'
 import CustomIcons from './Pagination'
 import Score from './Score'
 
