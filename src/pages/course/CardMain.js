@@ -77,6 +77,24 @@ const card = (
         sx={{ hover: { backgroundColor: 'green' } }}
       />
     </CardActions>
+
+    <div className="bg-[url(https://zone-assets-api.vercel.app/assets/images/e-learning/course_8.jpg)] mt-10 w-full h-96 flex items-center justify-center object-cover rounded-lg">
+      <div className="flex flex-col justify-center align-center h-full items-center  px-10 pt-28">
+        <h1 className="text-blue-600 font-extrabold text-center text-2xl mb-4">
+          Advertisement
+        </h1>
+        <p className="text-white text-center mb-6">
+          Duis leo. Donec orci lectus, aliquam ut, faucibus non
+        </p>
+
+        <MainButton
+          variant={'contained'}
+          children={'Go Now'}
+          className=""
+          sx={{ hover: { backgroundColor: 'green', fontSize: '20px' } }}
+        />
+      </div>
+    </div>
   </>
 )
 
