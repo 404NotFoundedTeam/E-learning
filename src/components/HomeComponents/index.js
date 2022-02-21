@@ -4,6 +4,60 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { useSelector } from "react-redux";
 import Post from "../Post.js";
 import { useNavigate } from "react-router-dom";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { Link } from "react-router-dom";
+import Fab from "@mui/material/Fab";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+
+function Hero() {
+  return (
+    <div className="flex flex-wrap items-start mt-16 flex-col-reverse lg:flex-row">
+      <div className="w-full lg:w-6/12">
+        <h1 className="text-6xl font-bold capitalize lg:pr-36 leading-[80px]">
+          Free <span className="text-[#919EAB]">online</span>{" "}
+          <span className="underline text-[#FA541C]">courses</span> from the
+          experts.
+        </h1>
+        <p className="text-[#919EAB] my-9 lg:pr-28">
+          Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum laoreet
+          sapien, quis venenatis ante odio sit amet e.
+        </p>
+        <div>
+          <MainButton variant="contained" className="!py-3 !px-4">
+            Ready start <ArrowForwardIosIcon className="ml-3 !text-base" />
+          </MainButton>
+          <Link to="/" className="ml-5 text-gray-700 hover:text-black">
+            <Fab color="primary" className="hover:scale-105" aria-label="add">
+              <PlayArrowIcon />
+            </Fab>
+            <span className="ml-3">Watch here</span>
+          </Link>
+        </div>
+        <div className="flex mt-12 border-t border-dotted border-gray-300 pt-10">
+          <div className="w-4/12">
+            <p className="text-3xl font-bold">14k+</p>
+            <p className="text-[#919EAB]">Learners</p>
+          </div>
+          <div className="w-4/12">
+            <p className="text-3xl font-bold">1.05k+</p>
+            <p className="text-[#919EAB]">Courses</p>
+          </div>
+          <div className="w-4/12">
+            <p className="text-3xl font-bold">59k+</p>
+            <p className="text-[#919EAB]">Graduates</p>
+          </div>
+        </div>
+      </div>
+      <div className="w-full lg:w-6/12">
+        <img
+          className="w-10/12 mx-auto mt-[-25px]"
+          src="img/student.png"
+          alt=""
+        />
+      </div>
+    </div>
+  );
+}
 
 export default function Companies() {
   return (
@@ -61,7 +115,7 @@ function Definition() {
 
 function CourseBox({ title, students }) {
   return (
-    <div className="border rounded-xl p-6 text-[22px] flex flex-col justify-between">
+    <div className="border rounded-xl hover:bg-[#eee] transition-all p-6 text-[22px] flex flex-col justify-between">
       <p className="font-medium text-[17px] capitalize">{title}</p>
       <p className="text-[15px] text-[#919EAB]">{students} students</p>
     </div>
@@ -155,4 +209,4 @@ function Register() {
   );
 }
 
-export { Definition, FeaturedCategory, LatestPosts, Register };
+export { Hero, Definition, FeaturedCategory, LatestPosts, Register };

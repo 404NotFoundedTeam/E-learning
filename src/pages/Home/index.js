@@ -1,9 +1,10 @@
 import React from "react";
-import Hero from "..";
+import Home from "../../components/Home";
+
 export default function HomePage() {
   return (
     <div className="mx-auto">
-      <Hero />
+      <Home />
     </div>
   );
 }
