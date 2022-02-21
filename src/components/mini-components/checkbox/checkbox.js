@@ -51,7 +51,7 @@ const BpCheckedIcon = styled(BpIcon)({
 });
 
 // Inspired by blueprintjs
-function BpCheckbox(props) {
+function BpCheckbox({ props, id }) {
   return (
     <Checkbox
       sx={{
@@ -63,6 +63,7 @@ function BpCheckbox(props) {
       icon={<BpIcon />}
       inputProps={{ "aria-label": "Checkbox demo" }}
       {...props}
+      id={id}
     />
   );
 }
