@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import Courses from "./pages/courses";
 import Course from "./pages/course/Course";
+import MainPost from "./pages/Post.js";
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/course" element={<Course />} />
-        <Route path="/posts" element={<Posts />} />
+        <Route path="/posts">
+          <Route path="" element={<Posts />} />
+          <Route path="post" element={<MainPost />} />
+        </Route>
       </Routes>
     </section>
   );
