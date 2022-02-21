@@ -10,6 +10,7 @@ import { Button } from "@mui/material";
 import ShadowBox from "./ShadowBox";
 import BasicPagination from "../../components/mini-components/pagination/paginations";
 import MainButton from "../../components/Button";
+import { Register } from "../../components/HomeComponents";
 
 export default function Posts() {
   const posts = useSelector((state) => state.posts.posts);
@@ -116,33 +117,7 @@ export default function Posts() {
             </div>
           </div>
         </div>
-        <div className="py-7 register mb-10 bg-[#fff2ed] rounded-xl !mt-20 flex flex-wrap">
-          <div className="lg:w-7/12 p-7 text-center flex flex-col justify-center items-center ">
-            <div className="w-full j:w-10/12 xl:w-8/12">
-              <h2 className="font-bold leading-normal text-3xl my-4">
-                Register Now Forget 20% Discount Every Courses
-              </h2>
-              <p className="text-md text-black my-5">
-                Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel,
-                lacus. Sed magna purus, fermentum eu
-              </p>
-
-              <div className="mt-7 flex w-full h-[50px] overflow-hidden bg-white rounded-lg p-1.5">
-                <input
-                  placeholder="Enter your email"
-                  className="flex-1 text-sm bg-transparent px-2 outline-none border-0 h-full"
-                />
-                <MainButton variant={"contained"}>Register</MainButton>
-              </div>
-            </div>
-          </div>
-          <div className="lg:w-5-12 p-4 text-center mx-auto">
-            <img
-              className="w-full object-cover"
-              src="https://zone-assets-api.vercel.app/assets/illustrations/illustration_newsletter.svg"
-            />
-          </div>
-        </div>
+        <Register />
       </div>
     </PostsWrapper>
   );
