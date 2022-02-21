@@ -1,5 +1,5 @@
-import React from 'react'
-import Hero from '../components/Hero'
+import React from "react";
+import Hero from "../components/Home";
 
 export default function HomePage() {
   return (
@@ -8,5 +8,5 @@ export default function HomePage() {
         <Hero />
       </div>
     </div>
-  )
+  );
 }

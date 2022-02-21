@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 
 export default function BigCard({ obj, data }) {
   return (
-    <div className="big-card flex w-full rounded-2xl  overflow-hidden h-90 mb-8">
-      <div className="left w-4/12 h-full">
+    <div className="big-card flex w-full rounded-2xl  overflow-hidden  mb-8">
+      <div className="left  flex-1">
         <img
           src={obj.img}
           alt={obj.name}
