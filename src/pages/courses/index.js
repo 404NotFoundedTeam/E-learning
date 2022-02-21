@@ -32,7 +32,7 @@ function Courses() {
           </h2>
         </div>
         <div className="flex justify-between w-full gap-10 md:gap-0 flex-wrap">
-          <div className="w-3/12 md:w-6/12 md:mx-auto sm:w-full xs:w-full">
+          <div className="w-full md:w-3/12 lg:w-3/12">
             <div className="flex">
               <div>
                 <div className="pl-0 ">
@@ -111,7 +111,7 @@ function Courses() {
               <div></div>
             </div>
           </div>
-          <div className="w-8/12 md:w-full sm:w-full xs:w-full">
+          <div className="md:w-8/12 lg:w-8/12 w-full">
             {datas.map((obj, i) => (
               <BigCard obj={obj} key={i} />
             ))}
