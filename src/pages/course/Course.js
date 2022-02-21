@@ -17,6 +17,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import { nanoid } from 'nanoid'
 import Lessons from './Lessons'
 import Instructors from './Instructors'
+import Reviews from './Reviews'
 export default function Course({ obj }) {
   const lessons = [
     {
@@ -173,6 +174,7 @@ export default function Course({ obj }) {
       <div className="items-center py-4 gap-12 container mx-auto bg-white">
         <Lessons lessons={lessons} />
         <Instructors />
+        <Reviews />
       </div>
     </CourseWrapper>
   )
