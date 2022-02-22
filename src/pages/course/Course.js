@@ -159,7 +159,7 @@ export default function Course({ obj }) {
           <div className="md:w-8/12 sm:w-full lg:w-6/12 flex ">
             <div className="w-full  h-full flex  justify-end  ">
               <div
-                className="flex items-center justify-center h-full w-7/12  bg-[url('https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg')] 
+                className="flex items-center justify-center  w-7/12  bg-[url('https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg')] 
              object-cover rounded-xl  "
               >
                 <div>

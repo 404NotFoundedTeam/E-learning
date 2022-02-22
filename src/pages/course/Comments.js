@@ -15,6 +15,7 @@ import ShareIcon from '@mui/icons-material/Share'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import MoreVertIcon from '@mui/icons-material/MoreVert'
 import { FaReply, FaStar, FaStarHalfAlt, FaThumbsUp } from 'react-icons/fa'
+import RatingCourse from './Rating'
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props
@@ -46,15 +47,7 @@ export default function Comments() {
             />
           </Avatar>
         }
-        action={
-          <IconButton aria-label="settings">
-            <FaStar className="star" />
-            <FaStar className="star" />
-            <FaStar className="star" />
-            <FaStar className="star" />
-            <FaStarHalfAlt className="star" />
-          </IconButton>
-        }
+        action={<RatingCourse />}
         title="Jayvion Simon"
         subheader="20 Feb 2022"
       />
