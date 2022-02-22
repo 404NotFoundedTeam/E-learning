@@ -74,16 +74,16 @@ const card = (
         variant={'contained'}
         children={'Enter Now'}
         className="h-14 w-full transition-colors"
-        sx={{ hover: { backgroundColor: 'green' } }}
       />
     </CardActions>
 
     <div className="bg-[url(https://zone-assets-api.vercel.app/assets/images/e-learning/course_8.jpg)] mt-10 w-full h-96 flex items-center justify-center object-cover rounded-lg">
-      <div className="flex flex-col justify-center align-center h-full items-center  px-10 pt-28">
-        <h1 className="text-blue-600 font-extrabold text-center text-2xl mb-4">
+      <div className="flex relative z-10 flex-col justify-center align-center h-full items-center  px-10 pt-28">
+        <div className="mask z-0 absolute left-0 r-0 b-0 top-0  w-full h-full z-10 bg-gradient-to-t from-black to-inherit"></div>
+        <h1 className="text-blue-600 z-10 font-extrabold text-center text-2xl mb-4">
           Advertisement
         </h1>
-        <p className="text-white text-center mb-6">
+        <p className="text-white text-center mb-6 z-10">
           Duis leo. Donec orci lectus, aliquam ut, faucibus non
         </p>
 
