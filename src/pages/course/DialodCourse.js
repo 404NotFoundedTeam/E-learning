@@ -63,7 +63,7 @@ export default function DialogCourse() {
 
   return (
     <div>
-      <div className="w-full bg-slate-900" sx={{ width: '100%' }}>
+      <div className="w-full" sx={{ width: '100%' }}>
         <MainButton
           onClick={handleClickOpen}
           startIcon={<FaPen />}
@@ -94,11 +94,6 @@ export default function DialogCourse() {
         <DialogContent dividers>
           <Form />
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save changes
-          </Button>
-        </DialogActions>
       </BootstrapDialog>
     </div>
   )

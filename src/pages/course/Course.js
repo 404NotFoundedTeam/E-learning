@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../../components/Header'
 import CourseWrapper from './CourseWrapper'
+
 import {
   FaAngleRight,
   FaClock,
@@ -18,7 +19,13 @@ import { nanoid } from 'nanoid'
 import Lessons from './Lessons'
 import Instructors from './Instructors'
 import Reviews from './Reviews'
+import SimiliarCourses from './SimiliarCourse'
+import BigCard from '../../components/BigCard/BigCard'
+import { useSelector } from 'react-redux'
+import BasicPagination from '../../components/mini-components/pagination/paginations'
 export default function Course({ obj }) {
+  const datas = useSelector((state) => state.courses.datas)
+
   const lessons = [
     {
       id: nanoid(),
@@ -175,6 +182,11 @@ export default function Course({ obj }) {
         <Lessons lessons={lessons} />
         <Instructors />
         <Reviews />
+        <div className="md:w-8/12 lg:w-1/3 sm:w-full flex flex-wrap  w-full">
+          {datas.map((obj, i) => (
+            <SimiliarCourses obj={obj} key={i} />
+          ))}
+        </div>
       </div>
     </CourseWrapper>
   )
