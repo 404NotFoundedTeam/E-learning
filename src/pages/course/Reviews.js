@@ -7,14 +7,14 @@ import Score from './Score'
 export default function Reviews() {
   return (
     <div>
-      <div className="flex">
-        <div className="w-8/12 flex flex-col gap-5">
+      <div className="flex flex-wrap">
+        <div className="lg:w-8/12 md:w-full sm:w-full flex flex-col gap-5">
           <Comments />
           <Comments />
           <Comments />
           <CustomIcons />
         </div>
-        <div className="w-4/12">
+        <div className="lg:w-4/12 md:w-full sm:w-full">
           <Score />
         </div>
       </div>

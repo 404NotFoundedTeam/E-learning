@@ -10,8 +10,8 @@ import { FaAddressCard, FaStar, FaUser, FaUsers } from 'react-icons/fa'
 export default function CardInstr() {
   return (
     <>
-      <div className="flex w-6/12   p-10">
-        <div className="border-2 rounded-xl w-full flex px-4 py-8">
+      <div className="flex lg:w-6/12 md:w-8/12 sm:w-11/12    p-10">
+        <div className="border-2 rounded-xl w-full flex flex-wrap px-4 py-8">
           {' '}
           <div className="w-1/3">
             <div className="flex h-24 w-24 rounded-full bg-gray-200 color-gray-600 text-4xl text-gray-600 justify-center items-center ">

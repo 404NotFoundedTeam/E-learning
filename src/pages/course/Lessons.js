@@ -10,8 +10,8 @@ export default function Lessons({ lessons }) {
 
   return (
     <section className="px-5 py-4 text-auto container">
-      <div className="flex gap-8">
-        <div className="w-8/12">
+      <div className="flex gap-8 flex-wrap">
+        <div className="lg:w-8/12 md:w-full sm:w-full sx:w-full">
           <div>
             <h2 className="bold font-bold text-3xl font-size-22 my-6">
               Lessons
