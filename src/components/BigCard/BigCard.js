@@ -33,15 +33,12 @@ export default function BigCard({ obj, data }) {
               }}
             >
               {obj.oldPrice && (
-                <del className="mr-3 text-xl text-red-500">${obj.oldPrice}</del>
+                <del className="mr-3 text-xl">${obj.oldPrice}</del>
               )}{" "}
               ${obj.price}
             </p>
           </div>
-          <NavLink
-            to={`courses/:${obj.id}`}
-            onClick={() => console.log(obj.id)}
-          >
+          <NavLink to={`course`} onClick={() => console.log(obj.id)}>
             <h3 className="text-slate-800 pb-2 font-bold text-md">
               {obj.name}
             </h3>

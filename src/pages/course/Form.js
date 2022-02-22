@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form'
 import Box from '@mui/material/Box'
 import TextField from '@mui/material/TextField'
 import MainButton from '../../components/Button'
+import RatingMui from '../../components/mini-components/ratings/ratings'
 
 const Form = () => {
   const [review, setReview] = useState([])
@@ -22,11 +23,16 @@ const Form = () => {
       component="form"
       onSubmit={handleSubmit(onSubmit)}
       sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        px: 2,
+
         '& > :not(style)': { m: 1, width: '25ch' },
       }}
       noValidate
       autoComplete="off"
     >
+      <RatingMui />
       <Box
         component="textarea"
         rows="5"
@@ -39,6 +45,7 @@ const Form = () => {
           outline: 'none',
           borderRadius: '10px',
           resize: 'none',
+          width: '100% !important',
         }}
       ></Box>
       <TextField
@@ -47,6 +54,7 @@ const Form = () => {
         label="Name"
         variant="outlined"
         required
+        sx={{ width: '100% !important' }}
       />
       <TextField
         id="outlined-basic"
@@ -55,15 +63,25 @@ const Form = () => {
         label="Email"
         variant="outlined"
         required
+        sx={{ width: '100% !important' }}
       />
 
-      <div className="flex flex-col">
+      <div
+        className="flex flex-col w-full gap-2  justify-center items-end h-full"
+        sx={{ width: '100% !important' }}
+      >
         <MainButton
-          children="Post review"
+          children={'Post review'}
+          variant={'contained'}
+          className="h-52 w-full transition-colors"
           type={'submit'}
-          variant="contained"
+          sx={{ width: '100% !important', height: '100% !important' }}
         />
-        <MainButton children="Cancel" variant="outlined" />
+        <MainButton
+          children="Cancel"
+          sx={{ width: '100% !important' }}
+          variant="outlined"
+        />
       </div>
     </Box>
   )

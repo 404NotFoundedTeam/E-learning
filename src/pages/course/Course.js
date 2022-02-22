@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Header from '../../components/Header'
 import CourseWrapper from './CourseWrapper'
 import {
   FaAngleRight,
@@ -18,7 +17,12 @@ import { nanoid } from 'nanoid'
 import Lessons from './Lessons'
 import Instructors from './Instructors'
 import Reviews from './Reviews'
+import ViewCorses from './SimiliarCourse'
+import { useSelector } from 'react-redux'
+import { Register } from '../../components/HomeComponents'
 export default function Course({ obj }) {
+  const datas = useSelector((state) => state.courses.datas)
+
   const lessons = [
     {
       id: nanoid(),
@@ -96,8 +100,8 @@ export default function Course({ obj }) {
       </div>
 
       <div className="items-center py-4 gap-12 container mx-auto bg-white">
-        <section className="container flex">
-          <div className="w-6/12">
+        <section className="container flex flex-wrap">
+          <div className="md:w-8/12 sm:w-full lg:w-6/12">
             <div>
               <h2 className="bold font-bold text-3xl font-size-22 my-6">
                 Design Masterclass Course
@@ -129,7 +133,7 @@ export default function Course({ obj }) {
                 <p className="py-1 text-gray-700">Jayvion Simon</p>
                 <p className="py-1 text-gray-500 underline">+ 5 teachers</p>
               </div>
-              <div className="mb-32 text-gray-600 mt-10 text-sm">
+              <div className="mb-32 text-gray-600 mt-10 text-sm ">
                 <div className="flex gap-6 mb-4">
                   <span className="flex gap-1 items-center">
                     <FaClock /> 100 hours
@@ -152,20 +156,27 @@ export default function Course({ obj }) {
               </div>
             </div>
           </div>
-          <div className="w-6/12">
-            <div
-              className="flex items-center justify-center h-full w-7/12 mx-auto bg-[url('https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg')] 
-             object-cover rounded-xl  "
-            >
-              <div>
-                <Fab
-                  color="inherit"
-                  className="hover:scale-105"
-                  aria-label="add"
-                  size=""
-                >
-                  <FaPlay className="text-xl" />
-                </Fab>
+          <div className="md:w-8/12 sm:w-full lg:w-6/12 flex">
+            <div className="w-full  h-full flex  justify-end  ">
+              <div className="flex items-center justify-center relative   w-7/12 ">
+                <div className="img absolute object-cover left-0 r-0 b-0 top-0  w-full h-full overflow-hidden rounded-2xl">
+                  <img
+                    src="https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg"
+                    alt="obj.name"
+                  />
+                </div>
+                <div className="mask absolute left-0 r-0 b-0 top-0  w-full h-full z-10 bg-gradient-to-t from-black to-inherit"></div>
+                <div>
+                  <Fab
+                    color="inherit"
+                    className="hover:scale-105 z-50"
+                    sx={{ color: 'rgb(250, 84, 28)' }}
+                    aria-label="add"
+                    size=""
+                  >
+                    <FaPlay className="text-xl" />
+                  </Fab>
+                </div>
               </div>
             </div>
           </div>
@@ -175,6 +186,8 @@ export default function Course({ obj }) {
         <Lessons lessons={lessons} />
         <Instructors />
         <Reviews />
+        <ViewCorses coursesData={datas} />
+        <Register />
       </div>
     </CourseWrapper>
   )

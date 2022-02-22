@@ -63,19 +63,23 @@ export default function DialogCourse() {
 
   return (
     <div>
-      <MainButton
-        onClick={handleClickOpen}
-        startIcon={<FaPen />}
-        children="Whrite A Review"
-        sx={{
-          width: '100%',
-          height: '50px',
-          color: 'rgb(250, 84, 28)',
-          '&:hover': {
-            boxShadow: '300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-          },
-        }}
-      />
+      <div className="w-full" sx={{ width: '100%' }}>
+        <MainButton
+          onClick={handleClickOpen}
+          startIcon={<FaPen />}
+          children="Whrite A Review"
+          sx={{
+            height: '50px',
+            color: 'rgb(250, 84, 28)',
+            '&.MuiCardActions-root': {
+              width: '100%',
+            },
+            '&:hover': {
+              boxShadow: '300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+            },
+          }}
+        />
+      </div>
       <BootstrapDialog
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
@@ -90,11 +94,6 @@ export default function DialogCourse() {
         <DialogContent dividers>
           <Form />
         </DialogContent>
-        <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save changes
-          </Button>
-        </DialogActions>
       </BootstrapDialog>
     </div>
   )
