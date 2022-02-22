@@ -59,6 +59,7 @@ export default function MultipleSelectPlaceholder({ names, placeholder }) {
             "&:focus": {
               border: "none",
             },
+            "& fieldset": { border: "none" },
             backgroundColor: "rgba(145, 158, 171, 0.08)",
             "&:hover": {
               backgroundColor: "rgba(145, 158, 171, 0.18)",
