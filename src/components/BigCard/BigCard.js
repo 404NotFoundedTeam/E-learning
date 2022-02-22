@@ -38,10 +38,7 @@ export default function BigCard({ obj, data }) {
               ${obj.price}
             </p>
           </div>
-          <NavLink
-            to={`courses/${obj.name}`}
-            onClick={() => console.log(obj.id)}
-          >
+          <NavLink to={`course`} onClick={() => console.log(obj.id)}>
             <h3 className="text-slate-800 pb-2 font-bold text-md">
               {obj.name}
             </h3>
