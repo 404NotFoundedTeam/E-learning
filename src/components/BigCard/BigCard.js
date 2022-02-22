@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 export default function BigCard({ obj, data }) {
   return (
-    <div className="big-card flex w-full rounded-2xl  overflow-hidden  mb-8">
+    <div className="big-card flex w-full rounded-2xl  overflow-hidden md:flex-row  xs:flex-col   mb-8">
       <div className="left  flex-1">
         <img
           src={obj.img}
@@ -16,7 +16,7 @@ export default function BigCard({ obj, data }) {
           lazy="loading"
         />
       </div>
-      <div className="right p-6 w-8/12 h-full flex flex-col bg-white justify-around">
+      <div className="right p-6 md:w-8/12 sm:w-full xs:w-full h-full flex flex-col bg-white justify-around">
         <div>
           <div className="flex justify-between">
             <h3
@@ -33,13 +33,13 @@ export default function BigCard({ obj, data }) {
               }}
             >
               {obj.oldPrice && (
-                <del className="mr-3 text-xl">${obj.oldPrice}</del>
+                <del className="mr-3 text-xl text-red-500">${obj.oldPrice}</del>
               )}{" "}
               ${obj.price}
             </p>
           </div>
           <NavLink
-            to={`courses/${obj.name}`}
+            to={`courses/:${obj.id}`}
             onClick={() => console.log(obj.id)}
           >
             <h3 className="text-slate-800 pb-2 font-bold text-md">
@@ -53,7 +53,6 @@ export default function BigCard({ obj, data }) {
             <GradeIcon sx={{ color: "#FDD627" }} />{" "}
             <span>
               <span className="font-bold text-slate-700">
-                {" "}
                 {numeral(obj.reviews).format("0.0a").slice(0, -1)}
               </span>
               <span className="text-slate-300 underline">
