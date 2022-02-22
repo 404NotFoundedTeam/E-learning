@@ -1,8 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 import Companies, {
   Definition,
   FeaturedCategory,
+  FeaturedCourses,
   Hero,
   LatestPosts,
   Register,
@@ -24,10 +26,12 @@ const courses = [
 ];
 
 export default function Home() {
+  const datas = useSelector((state) => state.courses.datas);
   return (
     <>
       <Hero />
       <Companies />
+      <FeaturedCourses coursesData={datas} />
       <Definition />
       <FeaturedCategory coursesList={courses} />
       <LatestPosts />
