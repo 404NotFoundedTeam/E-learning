@@ -1,11 +1,11 @@
-import { Routes, Route } from 'react-router-dom'
-import Posts from './pages/Posts'
-import HomePage from './pages/HomePage'
-import Header from './components/Header'
-import Courses from './pages/courses'
-import Course from './pages/course/Course'
-import MainPost from './pages/Post.js'
-import Footer from './components/Footer'
+import { Routes, Route } from "react-router-dom";
+import Posts from "./pages/Posts";
+import HomePage from "./pages/HomePage";
+import Header from "./components/Header";
+import Courses from "./pages/courses";
+import Course from "./pages/course/Course";
+import MainPost from "./pages/Post.js";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/courses" element={<Courses />} />
-        <Route path="/course" element={<Course />} />
+        <Route path="/course/:id" element={<Course />} />
         <Route path="/posts">
           <Route path="" element={<Posts />} />
           <Route path="post" element={<MainPost />} />
@@ -25,7 +25,7 @@ function App() {
 
       <Footer />
     </section>
-  )
+  );
 }
 
-export default App
+export default App;

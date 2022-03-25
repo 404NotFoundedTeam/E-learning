@@ -10,8 +10,8 @@ export default function Post({ data }) {
         src={data.mainImg}
         alt={data.title}
       />
-      <div className="flex flex-col">
-        <div className="flex flex-1 p-4">
+      <div className="flex flex-col justify-between">
+        <div className="flex p-4">
           <div className="data">
             <h3 className="border-b-slate-500 border-b font-semibold py-4 text-xl">
               {data.date.month}
