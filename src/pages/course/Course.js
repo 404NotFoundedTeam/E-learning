@@ -156,16 +156,21 @@ export default function Course({ obj }) {
               </div>
             </div>
           </div>
-          <div className="md:w-8/12 sm:w-full lg:w-6/12 flex ">
+          <div className="md:w-8/12 sm:w-full lg:w-6/12 flex">
             <div className="w-full  h-full flex  justify-end  ">
-              <div
-                className="flex items-center justify-center  w-7/12  bg-[url('https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg')] 
-             object-cover rounded-xl  "
-              >
+              <div className="flex items-center justify-center relative   w-7/12 ">
+                <div className="img absolute object-cover left-0 r-0 b-0 top-0  w-full h-full overflow-hidden rounded-2xl">
+                  <img
+                    src="https://zone-assets-api.vercel.app/assets/images/e-learning/course_1.jpg"
+                    alt="obj.name"
+                  />
+                </div>
+                <div className="mask absolute left-0 r-0 b-0 top-0  w-full h-full z-10 bg-gradient-to-t from-black to-inherit"></div>
                 <div>
                   <Fab
                     color="inherit"
-                    className="hover:scale-105"
+                    className="hover:scale-105 z-50"
+                    sx={{ color: 'rgb(250, 84, 28)' }}
                     aria-label="add"
                     size=""
                   >

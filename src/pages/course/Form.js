@@ -71,9 +71,10 @@ const Form = () => {
         sx={{ width: '100% !important' }}
       >
         <MainButton
-          children="Post review"
+          children={'Post review'}
+          variant={'contained'}
+          className="h-52 w-full transition-colors"
           type={'submit'}
-          variant="contained"
           sx={{ width: '100% !important', height: '100% !important' }}
         />
         <MainButton

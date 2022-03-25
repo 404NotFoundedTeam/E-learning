@@ -86,8 +86,9 @@ export default function Footer() {
                     sx={{
                       background: 'black',
                       borderRadius: '9px',
-                      '&hover': {
-                        background: 'red',
+                      padding: '10px',
+                      '&:hover': {
+                        background: 'black',
                       },
                     }}
                     startIcon={
@@ -103,7 +104,14 @@ export default function Footer() {
                     </span>
                   </Button>
                   <Button
-                    sx={{ background: 'black', borderRadius: '9px' }}
+                    sx={{
+                      background: 'black',
+                      borderRadius: '9px',
+                      padding: '10px',
+                      '&:hover': {
+                        background: 'black',
+                      },
+                    }}
                     startIcon={<FaGooglePlay className="text-white" />}
                   >
                     <span className="flex flex-col">
@@ -119,136 +127,136 @@ export default function Footer() {
                 <ul className="w-4/12 mb-10 flex flex-col gap-1.5">
                   <p className="text-xl mt-14 font-bold min-w-fit">Marketing</p>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                </ul>
-                <ul className="w-4/12 mb-10 flex flex-col gap-1.5">
-                  <p className="text-xl mt-14 font-bold min-w-fit">Marketing</p>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                 </ul>
                 <ul className="w-4/12 mb-10 flex flex-col gap-1.5">
                   <p className="text-xl mt-14 font-bold min-w-fit">Marketing</p>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                </ul>
-                <ul className="w-4/12 mb-10 flex flex-col gap-1.5">
-                  <p className="text-xl mt-14 font-bold min-w-fit">Marketing</p>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
-                  </li>
-                  <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                 </ul>
                 <ul className="w-4/12 mb-10 flex flex-col gap-1.5">
                   <p className="text-xl mt-14 font-bold min-w-fit">Marketing</p>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
                   </li>
                   <li className="text-gray-500">
-                    <a href="#">Landing</a>
+                    <Link to="/">Landing</Link>
+                  </li>
+                </ul>
+                <ul className="w-4/12 mb-10 flex flex-col gap-1.5">
+                  <p className="text-xl mt-14 font-bold min-w-fit">Marketing</p>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                </ul>
+                <ul className="w-4/12 mb-10 flex flex-col gap-1.5">
+                  <p className="text-xl mt-14 font-bold min-w-fit">Marketing</p>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
+                  </li>
+                  <li className="text-gray-500">
+                    <Link to="/">Landing</Link>
                   </li>
                 </ul>
               </div>
